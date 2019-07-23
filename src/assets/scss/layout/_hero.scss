@@ -1,0 +1,19 @@
+.hero {
+	@include v-align;
+	padding: 0 20px;
+	height: 156px;
+	background-color: $hero-base-bg;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $hero-color;
+	text-align: center;
+
+	@include media('>=tablet') {
+	height: 235px;
+	}
+
+	h1 {
+		margin-bottom: 0;
+		font-weight: normal;
+	}
+}

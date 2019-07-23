@@ -1,0 +1,170 @@
+.filter-panel{
+	.label-filter-panel{
+	  display:none;
+		background-color:$pacific-blue;
+    color:$white;
+    font-size:16px;
+    font-weight:bold;
+    line-height:22px;
+    margin:0;
+    padding:10px 15px;
+    i{
+    	font-size:16px;
+	    line-height:22px;
+	    padding:0 5px 0 0;
+	    &.btn-filter-panel{
+    		float:right;
+    		padding:0;
+	    }
+    }
+	}
+	.listing-filter-panel{
+		display:block;
+	}
+	h3{
+		display:table;
+		width:100%;
+		height:auto;
+		color:$scarpa-flow;
+		font-size:20px;
+		font-weight:bold;
+		line-height:26px;
+		cursor:pointer;
+		margin:0 0 15px;
+		&:hover, &:focus{
+			color:$pacific-blue;
+			transition:all .5s;
+      -webkit-transition:all .5s;
+      -moz-transition:all .5s;
+      -ms-transition:all .5s;
+      -o-transition:all .5s;
+		}
+		&.panel-focus{
+			color:$pacific-blue;
+			border-bottom:1px solid $pacific-blue;
+		}
+		i{
+			float:right;
+			display:inline-block;
+		}
+	}
+	ul{
+		display:none;
+		width:100%;
+		height:auto;
+		max-height:200px;
+		overflow-y:auto;
+		margin:0 0 15px;
+		&#aggregate_range_years, &#aggregate_range_prices, &#aggregate_range_kilometers{
+			overflow-y:hidden;
+		}
+		li{
+			display:table;
+			width:100%;
+			height:auto;
+			margin:0 0 10px;
+			&:last-child{
+				margin:0;
+			}
+			input, .jcf-checkbox {
+				float: left;
+				margin: 0 8px 0 0;
+			}
+			label{
+				float: left;
+				display:inline-block;
+				width:calc(100% - 25px);
+				height:100%;
+				color:$scorpion;
+				font-size:14px;
+				font-weight:normal;
+				text-transform:uppercase;
+				text-align:left;
+				vertical-align:middle;
+				cursor:pointer;
+			}
+		}
+	}
+	.panel-focus + ul{
+		display:block;
+	}
+	.btn-area{
+		display:table;
+		width:100%;
+		height:auto;
+		&.sticky-bottom {
+			position: fixed;
+			bottom: 30px;
+			width: calc(25% - 30px);
+		}
+		.btn-yaka{
+			width:100%;
+			font-size:16px;
+			line-height:34px;
+			text-transform:none;
+			padding:0;
+			i{
+				font-size:18px;
+			}
+		}
+	}
+}
+/*************************************************** MEDIAS QUERIES ****************************************************/
+@include media('<=991px') {
+	.filter-panel{
+		.label-filter-panel{
+		  display:block;
+		}
+		.listing-filter-panel{
+			display:none;
+			border:1px solid $pacific-blue;
+			border-bottom:0;
+			padding:10px 0 0;
+			div{
+				padding:0 10px;
+				&.btn-area{
+					padding:0;
+				}
+			}
+		}
+		h3{
+			font-size:16px;
+			line-height:22px;
+			margin:0 0 10px;
+		}
+		ul{
+			margin:0 0 10px;
+		}
+	}
+}
+@include media('<=479px') {
+	.filter-panel{
+		.label-filter-panel{
+		  display:block;
+		}
+		.listing-filter-panel{
+			display:none;
+			border:1px solid $pacific-blue;
+			border-bottom:0;
+			padding:10px 0 0;
+			div{
+				padding:0 10px;
+				&.btn-area{
+					padding:0;
+				}
+			}
+		}
+		h3{
+			font-size:14px;
+			line-height:20px;
+			margin:0 0 10px;
+		}
+		ul{
+			li{
+				label{
+					font-size:12px;
+				}
+			}
+		}
+	}
+}

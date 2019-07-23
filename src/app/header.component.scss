@@ -1,0 +1,419 @@
+@import "../assets/scss/main.scss";
+
+#header {
+	position: relative;
+	padding: 10px;
+	background-color: $header-bg-color;
+
+	@include media('>=desktop') {
+		padding: 0 20px;
+	}
+		@include media('>=widescreen') {
+		padding: 0 56px;
+	}
+
+	.logo {
+		margin-bottom: 15px;
+		@include media('>=desktop') {
+			position: relative;
+			top: 10px;
+			margin-bottom: 0;
+			margin-right: 40px;
+			float: left;
+			z-index: 2;
+		}
+
+		@include media('>=widescreen') {
+			margin-right: 68px;
+			width: 212px;
+		}
+		img {
+			@include media('>=desktop') {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.header-container {
+	@include media('>=desktop') {
+		position: relative;
+		margin: 0 auto;
+		padding: 0 150px 0 15px;
+		width: 100%;
+		max-width: 1539px;
+	}
+}
+
+.user-block {
+	margin-bottom: 15px;
+	padding: 0 10px;
+
+	@include media('>=desktop') {
+		margin: 0;
+		display: flex;
+		align-items: center;
+	}
+
+	a {
+		text-decoration: none;
+		color: $header-color;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	.form-search {
+		margin-bottom: 15px;
+		position: relative;
+		max-width: 400px;
+		font-size: 14px;
+
+		@include media('>=desktop') {
+			margin-bottom: 0;
+			margin-right: 15px;
+			max-width: 145px;
+		}
+
+		@include media('>=fullscreen') {
+			margin-right: 38px;
+		}
+
+		[class^="icon-"], [class*=" icon-"],
+		[class^="fa-"], [class*=" fa-"] {
+			display: block;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			color: $header-color;
+			transform: translateY(-50%) scale(-1, 1);
+		}
+	}
+
+	input[type='text'] {
+		padding-right: 50px;
+		padding-left: 10px;
+		width: 100%;
+		background-color: transparent;
+		font-weight: bold;
+		font-style: normal;
+		color: $header-color;
+
+		@include media('>=desktop') {
+			padding-top: 9px;
+			padding-bottom: 8px;
+		}
+	}
+
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 12px;
+		left: auto;
+		bottom: 0;
+		padding: 0;
+
+		color: $gray;
+		background-color: transparent;
+
+		span {
+			display: block;
+			text-indent: -9999px;
+		}
+	}
+
+	.user-prfile,
+	.cart {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 10px;
+	}
+
+	.user-prfile {
+		@include media('>=desktop') {
+			margin-right: 20px;
+		}
+
+		@include media('>=fullscreen') {
+			margin-right: 50px;
+		}
+	}
+
+	.cart {
+		position: relative;
+
+		.quantity {
+			display: block;
+			position: absolute;
+			top: 11px;
+			right: -17px;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			border-radius: 50%;
+			background-color: $second-color;
+			text-align: center;
+		}
+	}
+}
+
+.contacts {
+	padding: 5px;
+	background-color: $second-color;
+	font-weight: bold;
+	text-align: center;
+
+	@include media('>=desktop') {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		background-color: transparent;
+		transform: translateY(-50%);
+	}
+
+	a {
+		text-decoration: none;
+		color: $header-color;
+
+		@include media('>=desktop') {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	span {
+		display: block;
+		padding-left: 16px;
+		color: $header-color;
+		text-align: center;
+		font-weight: normal;
+
+		@include media('>=desktop') {
+			color: $second-color;
+			font-weight: bold;
+		}
+	}
+
+	[class^="icon-"], [class*=" icon-"],
+	[class^="fa-"], [class*=" fa-"] {
+		margin-right: 10px;
+		font-size: 12px;
+	}
+}
+
+.nav {
+	margin-bottom: 10px;
+	font-size: 14px;
+
+	@include media('>=desktop') {
+		margin-bottom: 0;
+		display: flex;
+	}
+
+	a {
+		display: block;
+		padding: 12px 10px;
+		color: $header-color;
+		text-decoration: none;
+
+		@include media('>=desktop') {
+			padding-top: 27px;
+			padding-bottom: 27px;
+		}
+
+		@include media('>=widescreen') {
+			padding-right: 17px;
+			padding-left: 17px;
+		}
+
+		&:hover {
+			background-color: $second-color;
+		}
+	}
+
+	>li {
+		@include media('>=desktop') {
+			position: relative;
+		}
+	}
+
+	.slide {
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 100%;
+		width: 100%;
+		background-color: $header-bg-color;
+		border-left: 1px solid $second-color;
+
+		@include media('>=desktop') {
+			top: 100%;
+			left: auto;
+			bottom: auto;
+			border: none;
+			width: auto;
+			min-width: 200px
+		}
+
+		>ul {
+			padding-top: 15px;
+		}
+	}
+
+	.hover {
+		.slide {
+			display: block;
+		}
+	}
+}
+
+.menu {
+	@include media('>=desktop') {
+		width: 100%;
+	}
+
+	.drop {
+		position: fixed;
+		top: 129px;
+		left: 0;
+		bottom: 0;
+		width: 160px;
+		padding: 15px 0;
+		background-color: $header-bg-color;
+		z-index: 10;
+		transform: translateX(-100%);
+		transition: transform .3s;
+
+		@include media('>=desktop') {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			top: auto;
+			bottom: auto;
+			left: auto;
+			width: auto;
+			display: flex;
+			justify-content: space-between;
+			background-color: transparent;
+			transform: none;
+		}
+	}
+}
+
+.nav-opener {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	width: 30px;
+	height: 25px;
+
+	&:hover {
+		opacity: .8;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+	}
+
+	&:before,
+	&:after,
+	span {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: $header-color;
+		transition: transform .3s;
+	}
+
+	&:before {
+		top: 50%;
+		transform: translateY(-50%);
+
+	}
+
+	&:after {
+		bottom: 2px;
+	}
+
+	span {
+		top: 2px;
+		text-indent: -9999px;
+		opacity: 1;
+		transition: opacity .3s;
+	}
+
+	@include media('>=desktop') {
+		display: none;
+	}
+}
+
+.nav-active {
+
+	#wrapper {
+		overflow: hidden;
+	}
+
+	#main {
+		position: relative;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background-color: $preview-overlay;
+		}
+	}
+	.menu {
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $second-color;
+		}
+		.drop {
+			position: fixed;
+			transform: translateX(0);
+			transition: transform .3s;
+		}
+	}
+
+	.nav-opener {
+
+		span {
+			opacity: 0;
+			transition: opacity .3s;
+		}
+
+		&:before,
+		&:after {
+			top: 50%;
+			bottom: auto;
+			background-color: $second-color;
+		}
+
+		&:before{
+			transform: rotate(45deg);
+			transition: transform .3s;
+		}
+
+		&:after {
+			transform: rotate(-45deg);
+			transition: transform .3s;
+		}
+	}
+}

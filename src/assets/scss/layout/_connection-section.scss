@@ -1,0 +1,112 @@
+.connection-section {
+	&.container {
+		padding-top: 20px;
+	}
+
+	h1 {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.connection {
+		@include media('>=tablet') {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.form-connection,
+	.creation {
+		margin-bottom: 15px;
+		border: 1px solid $form-connection-bg;
+
+		@include media('>=tablet') {
+			position: relative;
+			padding-bottom: 32px;
+			width: calc(50% - 10px);
+		}
+	}
+
+	.creation {
+		@include media('>=tablet') {
+			order: -1;
+		}
+	}
+
+	.title {
+		padding: 8px 10px;
+		display: block;
+		background-color: $form-connection-bg;
+		color: $second-text-color;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 16px;
+		letter-spacing: .5px;
+	}
+
+	.content {
+		padding: 6px 10px;
+		line-height: 1.3;
+		letter-spacing: .9px;
+	}
+
+	.form-group {
+		margin-bottom: 4px;
+
+		@include media('>=desktop') {
+
+			align-items: center;
+		}
+
+		&.margin-alt {
+			margin-bottom: 0;
+		}
+
+		label {
+			letter-spacing: .5px;
+			@include media('>=desktop') {
+				min-width: 149px;
+			}
+		}
+	}
+
+	input[type='email'] {
+		@include media('>=desktop') {
+			height: 30px;
+			max-width: 400px;
+		}
+	}
+
+	input[type='password'] {
+		@include media('>=desktop') {
+			height: 30px;
+			max-width: 240px;
+		}
+	}
+
+	.reminder {
+		position: relative;
+		top: -6px;
+		margin-bottom: 15px;
+		font-style: italic;
+		letter-spacing: .55px;
+
+	}
+
+	.btn-holder {
+		text-align: center;	
+
+		@include media('>=tablet') {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 10px;
+		}
+	}
+
+	.btn {
+		padding-right: 20px;
+		padding-left: 20px;
+		min-width: 200px;
+	}
+}

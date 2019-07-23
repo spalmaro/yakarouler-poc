@@ -1,0 +1,254 @@
+/******************************************************** POST *********************************************************/
+.post-holder{
+  .intro-block{
+    display:block;
+    .meta{
+      margin:0 0 30px;
+      span{
+        display:inline-block;
+        color:$black;
+        font-size:14px;
+        line-height:20px;
+        &.date{
+          font-style:italic;
+        }
+      }
+    }
+    p{
+      color:$black;
+      font-size:16px;
+      font-weight:bold;
+      line-height:22px;
+      text-transform:none;
+      text-align:justify;
+    }
+  }
+  .content-block{
+    display:table;
+    width:100%;
+    height:auto;
+    margin:30px 0 0;
+    h2{
+      display:block;
+      color:$blaze-orange;
+      font-size:20px;
+      font-weight:bold;
+      line-height:26px;
+      margin:30px 0 0;
+      &.align-left{
+        text-align:left;
+      }
+      &.align-right{
+        text-align:right;
+      }
+    }
+    figure{
+      margin:0;
+    }
+    img{
+      display:block;
+      width:auto;
+      max-width:100%;
+      margin:0 auto;
+    }
+    h2 + p,
+    h2 + span,
+    h2 + ul{
+      margin:0;
+    }
+    p, span{
+      color:$black;
+      font-size:14px;
+      line-height:20px;
+      text-align:justify;
+      margin:15px 0;
+    }
+    ul{
+      margin:15px 0;
+      li{
+        position:relative;
+        display:block;
+        color:$black;
+        padding:0;
+        &:before{
+          display:inline-block;
+          width:7px;
+          height:7px;
+          vertical-align:top;
+          border:2px solid $base-text-color;
+          border-radius:50%;
+          -webkit-border-radius:50%;
+          -moz-border-radius:50%;
+          -ms-border-radius:50%;
+          -o-border-radius:50%;
+          content:'';
+          margin:7px 5px 0 0;
+        }
+        p{
+          display:inline;
+          margin:0;
+        }
+      }
+    }
+  }
+  .form-block{
+    display:table;
+    width:100%;
+    height:auto;
+    margin:30px 0 0;
+    form{
+      .form-group{
+        display:table;
+        width:100%;
+        height:auto;
+        margin:0 0 10px;
+        label{
+          float:left;
+          display:inline-block;
+          width:15%;
+          height:30px;
+          color:$scorpion;
+          font-size:14px;
+          font-weight:bold;
+          line-height:30px;
+          margin:0;
+        }
+        input, textarea{
+          float:left;
+          display:inline-block;
+          width:85%;
+          color:$scorpion;
+          font-size:14px;
+          margin:0;
+          &::placeholder{
+            color:$silver;
+          }
+        }
+        input{
+          height:30px;
+          padding:0 10px;
+        }
+        textarea{
+          min-height:75px;
+          padding:10px;
+        }
+      }
+    }
+  }
+  .comments-block{
+    display:table;
+    width:100%;
+    height:auto;
+    .comment-holder{
+      .txt-comment{
+        margin:15px 0 0;
+        span{
+          font-style:italic;
+        }
+      }
+    }
+  }
+}
+/*************************************************** MEDIAS QUERIES ****************************************************/
+@include media('<=1299px') {
+  .post-holder{
+    .form-block{
+      form{
+        .form-group{
+          label{
+            width:20%;
+          }
+          input, textarea{
+            width:80%;
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=767px') {
+  .post-holder{
+    .intro-block{
+      .meta{
+        margin:0 0 20px;
+      }
+    }
+    .content-block{
+      margin:20px 0 0;
+      h2{
+        font-size:18px;
+        line-height:24px;
+        margin:15px 0 0;
+      }
+      p, span{
+        margin:10px 0;
+      }
+      ul{
+        margin:10px 0;
+      }
+    }
+    .form-block{
+      margin:20px 0 0;
+      form{
+        .form-group{
+          label{
+            width:30%;
+          }
+          input, textarea{
+            width:70%;
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=479px') {
+  .post-holder{
+    .intro-block{
+      .meta{
+        margin:0 0 15px;
+        span{
+          font-size:12px;
+          line-height:18px;
+        }
+      }
+      p{
+        font-size:14px;
+        line-height:20px;
+      }
+    }
+    .content-block{
+      margin:15px 0 0;
+      h2{
+        font-size:16px;
+        line-height:22px;
+      }
+      p, span{
+        font-size:12px;
+        line-height:18px;
+      }
+    }
+    .form-block{
+      form{
+        .form-group{
+          label{
+            width:100%;
+          }
+          input, textarea{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=319px') {
+  .post-holder{
+    .content-block{
+      h2{
+        font-size:14px;
+        line-height:20px;
+      }
+    }
+  }
+}

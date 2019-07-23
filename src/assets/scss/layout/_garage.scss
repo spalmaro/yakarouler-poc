@@ -1,0 +1,490 @@
+#infos-garage-page{
+  padding: 30px 0;
+  width: 100%;
+  .container{
+    .row{
+      .infos-garage{
+        display:table;
+        width:100%;
+        height:auto;
+        .text-infos-garage{
+          display:table-cell;
+          width:70%;
+          height:100%;
+          vertical-align:top;
+          h2{
+            color:$blaze-orange;
+            font-size:16px;
+            font-weight:bold;
+            line-height:22px;
+          }
+          ul{
+            li.garage-item{
+              display:table;
+              width:100%;
+              min-height:30px;
+              text-align:left;
+              margin:10px 0 0;
+              padding:0;
+              i{
+                display:table-cell;
+                width:30px;
+                height:100%;
+                color:$blaze-orange;
+                line-height:20px;
+                text-align:center;
+                vertical-align:top;
+              }
+              p{
+                display:inline-block;
+                width:calc(100% - 30px);
+                height:100%;
+                span, a{
+                  display:block;
+                }
+              }
+            }
+          }
+        }
+        .btn-infos-garage{
+          display:table-cell;
+          width:30%;
+          height:100%;
+          vertical-align:top;
+          .btns-group{
+            display:block;
+            .link-item{
+              width:100%;
+              .btn-yaka{
+                width:100%;
+              }
+            }
+          }
+        }
+      }
+      .map-garage{
+        display:block;
+        width:100%;
+        height:300px;
+        margin:30px 0 0;
+      }
+    }
+  }
+}
+#infos-garage-page + #list-garage-page{
+  .container{
+    .row{
+      .topic{
+        display:table;
+        width:100%;
+        text-align:left;
+        margin:0 0 20px;
+        span{
+          font-weight:bold;
+          &.quantity-result{
+            color:$scorpion;
+            font-size:20px;
+            .num{
+              color:$blaze-orange;
+              font-size:24px;
+            }
+          }
+        }
+      }
+      .previews-block{
+        .preview-loader{
+          figure{
+            i{
+              color:$blaze-orange;
+            }
+          }
+        }
+        .previews{
+          &.grid-view{
+            .preview-holder{
+              .inner{
+                .infos-wrapper{
+                  .visuel-block{
+                    .no-image, .img-wrapper{
+                      height:145px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*************************************************** MEDIAS QUERIES ****************************************************/
+@include media('<=1479px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:190px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=1399px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:190px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=1199px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:160px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=1099px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:245px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=991px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .topic{
+          font-size:18px;
+          span{
+            &.num{
+              font-size:22px;
+            }
+          }
+        }
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:255px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=839px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:215px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=767px') {
+  #infos-garage-page{
+    .container{
+      .row{
+        .infos-garage{
+          .text-infos-garage{
+            width:60%;
+          }
+          .btn-infos-garage{
+            width:40%;
+          }
+        }
+      }
+    }
+  }
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:195px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=639px') {
+  #infos-garage-page{
+    .container{
+      .row{
+        .infos-garage{
+          .text-infos-garage{
+            display:block;
+            width:100%;
+          }
+          .btn-infos-garage{
+            display:block;
+            width:100%;
+            margin:10px 0 0;
+          }
+        }
+      }
+    }
+  }
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .topic{
+          text-align:center;
+        }
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:160px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=567px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:140px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=479px') {
+  #infos-garage-page{
+    .container{
+      .row{
+        .infos-garage{
+          .text-infos-garage{
+            h2{
+              font-size:14px;
+              line-height:20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .topic{
+          font-size:16px;
+          span{
+            &.num{
+              font-size:20px;
+            }
+          }
+        }
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:240px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=399px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:200px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include media('<=319px') {
+  #infos-garage-page + #list-garage-page{
+    .container{
+      .row{
+        .previews-block{
+          .previews{
+            &.grid-view{
+              .preview-holder{
+                .inner{
+                  .infos-wrapper{
+                    .visuel-block{
+                      .no-image, .img-wrapper{
+                        height:155px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.logo-garage {
+  margin: 0 auto 10px auto;
+  display: block;
+}

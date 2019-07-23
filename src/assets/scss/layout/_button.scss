@@ -1,0 +1,145 @@
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 7px 30px;
+	border: none;
+	color: $btn-color;
+	text-decoration: none;
+	font-size: 16px;
+	&.i-right {
+		[class^="icon-"],
+		[class*=" icon-"],
+		[class^="fa-"],
+		[class*=" fa-"] {
+			margin-left: 5px;
+			margin-right: 0;
+		}
+	}
+	[class^="icon-"],
+	[class*=" icon-"],
+	[class^="fa-"],
+	[class*=" fa-"] {
+		margin-right: 5px;
+	}
+}
+
+.btn-primary {
+	background-color: $btn-primary-bg;
+	&:hover {
+		background-color: $btn-primary-bg-hover;
+	}
+}
+
+.btn-primary-light {
+	padding: 0;
+	color: $primary-color;
+	border-bottom: 1px solid $primary-color;
+	&:hover {
+		border-bottom-color: transparent;
+	}
+}
+
+.btn-secondary {
+	background-color: $btn-secondary-bg;
+	&:hover {
+		background-color: $btn-secondary-bg-hover;
+	}
+}
+
+.btn-secondary-light {
+	color: $second-color;
+	border: 1px solid $second-color;
+	&:hover {
+		color: $btn-color;
+		background-color: $btn-secondary-bg;
+	}
+}
+
+.btn-tertiary {
+	background-color: $btn-tertiary-bg;
+	&:hover {
+		background-color: $btn-tertiary-bg-hover;
+	}
+}
+
+.btn-quaternary {
+	background-color: $btn-quaternary-bg;
+	&:hover {
+		background-color: $btn-quaternary-bg-hover;
+	}
+}
+
+.btn-fiver {
+	background-color: transparent;
+	color: $silver-chalice-2;
+	border: 1px solid $silver-chalice-2;
+	&:hover {
+		background-color: $silver-chalice-2;
+		color: $btn-color;
+	}
+}
+
+.btn-sixth {
+	background-color: $bombay;
+	&:hover {
+		background-color: $btn-sixth-bg-hover;
+	}
+}
+
+.btn-black {
+	background-color: $black;
+	&:hover {
+		background-color: $bombay;
+	}
+}
+
+.btns-group {
+	.btn {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+}
+
+.btn-container {
+	padding: 0 15px;
+	margin-bottom: 24px;
+	text-align: center;
+	border-bottom: 1px solid $base-border-color;
+	@include media('>=tablet') {
+		display: flex;
+	}
+
+	@include media('>=desktop') {
+		margin-right: auto;
+		margin-left: auto;
+		padding: 0;
+		width: 100%;
+		max-width: 1252px;
+		justify-content: space-between;
+	}
+	.btn-holder {
+		@include media('>=tablet') {
+			width: 50%;
+		}
+
+		@include media('>=desktop') {
+			width: auto;
+		}
+	}
+	.btn {
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-bottom: 15px;
+		width: 280px;
+		@include media('>=tablet') {
+			min-width: 300px;
+		}
+
+		@include media('>=widescreen') {
+			margin-bottom: 32px;
+			padding-top: 10px;
+			padding-bottom: 12px;
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+.description-holder{
+	display:table;
+	width:100%;
+	margin:30px 0 0;
+	.field-description{
+		display:table;
+		width:100%;
+		margin:0 0 20px;
+		h2{
+			color:$second-color;
+			font-size:16px;
+			font-weight:bold;
+			line-height:22px;
+			margin:0 0 10px;
+		}
+		p{
+			columns:2;
+			-webkit-columns:2;
+			-moz-columns:2;
+			text-transform:lowercase;
+		}
+		span{
+	    float:left;
+			display:inline-block;
+	    width:50%;
+			color:$base-text-color;
+			font-size:14px;
+			line-height:20px;
+			&.article{
+				width:100%;
+				font-weight:bold;
+				margin:0 0 10px;
+			}
+			&.feature{
+				font-weight:bold;
+			}
+		}
+		ul{
+			float:left;
+			display:table;
+			width:50%;
+			&.block-description{
+				width:33.33333333%;
+				padding:0 15px 0 0;
+				&:last-child{
+					padding:0;
+				}
+				.box-description{
+					margin:0 0 15px;
+					&:last-child{
+						margin:0;
+					}
+				}
+			}
+			&.list-equipment{
+				width:100%;
+				li{
+					position:relative;
+					display:table;
+					color:$base-text-color;
+					padding:0;
+					&:before{
+						display:inline-block;
+						width:7px;
+						height:7px;
+						vertical-align:top;
+						border:2px solid $base-text-color;
+						border-radius:50%;
+						-webkit-border-radius:50%;
+						-moz-border-radius:50%;
+						-ms-border-radius:50%;
+						-o-border-radius:50%;
+						content:'';
+						margin:7px 7px 0 0;
+					}
+					span{
+						float:none;
+						display:inline;
+						width:auto;
+					}
+				}
+			}
+			li{
+				display:table;
+				width:100%;
+				margin:0 0 5px;
+				&:last-child{
+					margin:0;
+				}
+			}
+		}
+	}
+}
+/*************************************************** MEDIAS QUERIES ****************************************************/
+@include media('<=1199px') {
+	.description-holder{
+		.field-description{
+			ul{
+				&.block-description{
+					width:50%;
+				}
+			}
+		}
+	}
+}
+@include media('<=639px') {
+	.description-holder{
+		.field-description{
+			ul{
+				width:100%;
+			}
+		}
+	}
+}
+@include media('<=479px') {
+	.description-holder{
+		margin:20px 0 0;
+		.field-description{
+			ul{
+				&.block-description{
+					width:100%;
+					margin:0 0 15px;
+					padding:0;
+					&:last-child{
+						margin:0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,211 @@
+// // Open sans
+// @font-face {
+// 	font-family: 'Open Sans';
+// 	src: url('assets/fonts/OpenSans/opensans-regular-webfont.eot');
+// 	font-weight: normal;
+// 	font-style: normal;
+
+// }
+
+// @font-face {
+// 	font-family: 'Open Sans';
+// 	src: url('assets/fonts/OpenSans/opensans-italic-webfont.eot');
+// 	font-weight: normal;
+// 	font-style: italic;
+
+// }
+
+// @font-face {
+// 	font-family: 'Open Sans';
+// 	src: url('assets/fonts/OpenSans/opensans-bold-webfont.eot');
+// 	font-weight: bold;
+// 	font-style: normal;
+
+// }
+
+// @font-face {
+// 	font-family: 'Open Sans';
+// 	src: url('assets/fonts/OpenSans/opensans-semibold-webfont.eot');
+// 	font-weight: 600;
+// 	font-style: normal;
+
+// }
+
+// // Incomoon
+
+// @font-face {
+// 	font-family: 'icomoon';
+// 	src:  url('../../fonts/Icomoon/icomoon.eot?agf9vs');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-edit:before {
+	content: "\e923";
+}
+.icon-sent-mail:before {
+	content: "\e921";
+}
+.icon-cart:before {
+	content: "\e900";
+}
+.icon-search:before {
+	content: "\e901";
+}
+.icon-user:before {
+	content: "\e902";
+}
+.icon-bullseye:before {
+	content: "\e903";
+}
+.icon-calendar:before {
+	content: "\e904";
+}
+.icon-camera:before {
+	content: "\e905";
+}
+.icon-car:before {
+	content: "\e906";
+}
+.icon-clock:before {
+	content: "\e907";
+}
+.icon-disk-floppy:before {
+	content: "\e908";
+}
+.icon-display:before {
+	content: "\e909";
+}
+.icon-envelope:before {
+	content: "\e90a";
+}
+.icon-euro:before {
+	content: "\e90b";
+}
+.icon-information:before {
+	content: "\e90c";
+}
+.icon-list:before {
+	content: "\e90d";
+}
+.icon-map:before {
+	content: "\e90e";
+}
+.icon-phone:before {
+	content: "\e90f";
+}
+.icon-pin:before {
+	content: "\e910";
+}
+.icon-portfolio:before {
+	content: "\e911";
+}
+.icon-printing:before {
+	content: "\e912";
+}
+.icon-refresh:before {
+	content: "\e913";
+}
+.icon-right-arrow:before {
+	content: "\e914";
+}
+.icon-left-arrow:before {
+	content: "\e915";
+}
+.icon-sand-clock:before {
+	content: "\e916";
+}
+.icon-settings:before {
+	content: "\e917";
+}
+.icon-share:before {
+	content: "\e918";
+}
+.icon-star:before {
+	content: "\e919";
+}
+.icon-star-full:before {
+	content: "\e91a";
+}
+.icon-target:before {
+	content: "\e91b";
+}
+.icon-thumbs-up:before {
+	content: "\e91c";
+}
+.icon-trash:before {
+	content: "\e91d";
+}
+.icon-two-arrows-up:before {
+	content: "\e91e";
+}
+.icon-umbrella:before {
+	content: "\e91f";
+}
+.icon-warning:before {
+	content: "\e920";
+}
+.icon-google-plus:before {
+	content: "\ea8b";
+}
+.icon-facebook:before {
+	content: "\ea90";
+}
+.icon-twitter:before {
+	content: "\ea96";
+}
+.icon-wordpress:before {
+	content: "\eab4";
+}
+.icon-spinner11:before {
+	content: "\e984";
+}
+.icon-cancel-circle:before {
+	content: "\ea0d";
+}
+.icon-play3:before {
+	content: "\ea1c";
+}
+
+.icon-sign-in:before {
+	content: "\e922";
+}
+
+.icon-double-angle-left:before {
+	content: "\e924";
+}
+.icon-double-angle-right:before {
+	content: "\e925";
+}
+
+.icon-cross:before {
+  content: "\ea0f";
+}
+
+.icon-volume-high:before {
+  content: "\ea26";
+}

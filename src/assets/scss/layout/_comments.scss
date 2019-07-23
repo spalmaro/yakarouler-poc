@@ -1,0 +1,38 @@
+.comments-section {
+	margin-bottom: 34px;
+
+	.title {
+		display: block;
+		margin-bottom: 18px;
+		font-weight: bold;
+		font-size: 17px;
+	}
+
+	.meta {
+		margin-bottom: 12px;
+		letter-spacing: .45px;
+	}
+
+	.txt-comment {
+		font-style: italic;
+		letter-spacing: .35px;
+		
+		> span {
+			display: block;
+
+			&:before,
+			&:after {
+				display: inline-block;
+				vertical-align: top;
+			}
+			&:before {
+				content: '\00ab';
+				margin-right: 5px;
+			}
+			&:after {
+				content: '\00bb';
+				margin-left: 5px;
+			}
+		}
+	}
+}

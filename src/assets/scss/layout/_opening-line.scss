@@ -1,0 +1,42 @@
+.opening-line {
+  margin-top: 10px;
+  > .row {
+    display: flex;
+    .form-group {
+      display: flex;
+      flex: 2;
+      > div {
+        display: flex;
+        align-items: center;
+      }
+      .row {
+        margin-right: 10px;
+        label {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .daily-times {
+    select {
+      margin: 0 5px;
+    }
+  }
+}
+
+#pro_openings {
+  margin: 0 -15px;
+  > .row {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 20px;
+  }
+  > .row:nth-child(even) {
+    background: #f2f2f2;
+  }
+  .remove_btn {
+    background: #DDD;
+    margin-right: 10px;
+  }
+}

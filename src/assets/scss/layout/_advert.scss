@@ -1,0 +1,31 @@
+.advert-holder {	
+	@include media('>=tablet') {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+
+	.advert {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 320px;
+		@include media('>=tablet') {
+			padding: 0 10px;
+		}
+
+		@include media('>=desktop') {
+			padding: 0;
+			margin-bottom: 2px;
+			max-width: none;
+			font-size: 18px;
+		}
+	}
+	.advert-meta {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+		letter-spacing: .5px;
+	}
+}
+
+

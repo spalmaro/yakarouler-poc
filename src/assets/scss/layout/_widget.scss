@@ -1,0 +1,61 @@
+/******************************************************** WIDGET *******************************************************/
+.widget{
+	display:block;
+	margin:0 0 15px;
+	h3{
+		display:block;
+		height:35px;
+		background-color:$headline-mark-base-bg;
+		color:$headline-mark-base-color;
+		font-size:16px;
+		font-weight:bold;
+		line-height:35px;
+		text-align:center;
+		text-transform:uppercase;
+		text-overflow:ellipsis;
+  	white-space:nowrap;
+  	overflow:hidden;
+		margin:0;
+		padding:0 5px;
+		a{
+			display:block;
+			width:100%;
+    	height:100%;
+			font-size:16px;
+			line-height:35px;
+			text-overflow:ellipsis;
+    	white-space:nowrap;
+    	overflow:hidden;
+    	span{
+				color:$pacific-blue;
+				font-size:16px;
+				line-height:35px;
+			}
+		}
+	}
+	span{
+		color:$scarpa-flow;
+		font-size:12px;
+	}
+	ul{
+		display:block;
+		width:100%;
+		height:auto;
+		border:1px solid $headline-mark-base-bg;
+		border-top:0;
+	}
+}
+/*************************************************** MEDIAS QUERIES ****************************************************/
+@include media('<=1199px') {
+	.widget{
+		h3{
+			font-size:14px;
+			a{
+				font-size:14px;
+	    	span{
+					font-size:14px;
+				}
+			}
+		}
+	}
+}

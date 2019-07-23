@@ -1,0 +1,10 @@
+{
+  "/api/*": {
+    "target": "https://pim.yakarouler.net",
+    "secure": true,
+    "pathRewrite": {
+    "^/*": ""
+  },
+    "changeOrigin": true
+  }
+}

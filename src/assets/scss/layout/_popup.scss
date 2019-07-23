@@ -1,0 +1,57 @@
+.popup-holder {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+}
+
+.lightbox-demo {
+	padding: 5px;
+	text-align: center !important;
+
+	@include media('>=tablet') {
+		width: 616px;
+	}
+
+	h2 {
+		text-transform: none;
+		color: $second-color;
+		font-size: 20px;
+	}
+	span {
+		display: block;
+		font-size: 14px;
+		&:last-of-type {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.lightbox-demo h2 {
+	margin: 0 0 10px;
+}
+
+.lightbox-demo p {
+	margin: 0;
+}
+
+.reminder-form {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 396px;
+
+	input[type='email'] {
+		width: 100%;
+		height: 30px;
+		line-height: 30px;
+	}
+
+	.btn {
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 0 10px;
+		line-height: 30px;
+	}
+}

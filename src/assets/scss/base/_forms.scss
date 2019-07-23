@@ -1,0 +1,102 @@
+// forms
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='search'],
+input[type='password'],
+//input[type='url'],
+// input[type='date'],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	box-sizing: border-box;
+	border: 1px solid $base-border-color;
+	padding: $form-element-padding;
+	font-style: italic;
+
+	// &:hover {
+
+	// }
+
+	&:focus {
+		border-color: $form-element-focus-border-color;
+	}
+
+	@include placeholder {
+		color: $placeholder-color;
+	}
+}
+
+select {
+	-webkit-border-radius: 0;
+}
+
+textarea {
+	resize: vertical;
+	vertical-align: top;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='file'],
+input[type='submit'] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+}
+
+.input-error {
+	input[type='text'],
+	input[type='tel'],
+	input[type='email'],
+	input[type='search'],
+	input[type='password'],
+	textarea,
+	.jcf-select,
+	.jcf-radio,
+	.jcf-checkbox {
+		border-color: $error-color;
+	}
+}
+
+.listing-filter-panel {
+	input[type="checkbox"] {
+		opacity: 0;
+	}
+	input[type="checkbox"] + a {
+		position: relative;
+		&::before {
+			content: "";
+			width: 13px;
+			height: 13px;
+			border: 1px solid #999;
+			background: #EEE;
+			position: absolute;
+			top: 3px;
+			left: -20px;
+		}
+	}
+	input[type="checkbox"]:checked + a {
+		&::after {
+			content: '✓';
+			color: #139bbd;
+			position: absolute;
+			left: -19px;
+			font-size: 20px;
+			top: -5px;
+		}
+	}
+}
+
+a.link-label {
+	text-decoration: none;
+	color: #59595b;
+}
